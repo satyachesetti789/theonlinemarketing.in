@@ -32,19 +32,23 @@ theonlinemarketing/
 Pure static HTML/CSS/JS — no build step, no dependencies, no external requests
 (typeface is self-hosted, so even the fonts need no CDN).
 
-## Design system (client spec v2)
+## Design system v3 — Apple x Stripe x COLLINS
+- **References:** COLLINS (premium agency structure & personality), Apple (typography,
+  whitespace, clean presentation, light footer), Stripe (navy hero card, aurora gradients,
+  gradient headline accents).
 - **Fonts (self-hosted, zero external requests):** Space Grotesk variable — headings;
   DM Sans variable — body (`assets/fonts/`). SIL Open Font License.
-- **Type scale:** H1 hero 72/44 · H2 44/34 · H3 28/24 (w500) · card H4 22/20 (w600) ·
-  sub-headings 18/17 · body 16 · nav 14 (w500) · buttons 14 (w600) · labels 12/11 (w500,
-  uppercase, +1.2px) · footer 14/13. Line-heights & letter-spacing per spec (hero -2px, H2 -1.2px).
-- **Palette:** Warm Ivory `#F5F3EE` (primary bg) · Soft Beige `#EAE7E0` · Rich Black
-  `#171717` (text/buttons) · Stone Grey `#77766F` · Champagne Gold `#B5A58A` (accent, 3%) ·
-  White cards · borders `#DDDAD2` · Deep Charcoal `#222222` (dark bands + footer).
-- **Layout:** 1440px max content · 12-column desktop grid · 8px spacing system ·
-  120px section padding (72 mobile) · 80-100px side margins (20 mobile) · header 84/68 ·
-  hero min-height 700/600 · cards 32/24 padding, 28/16 gap, 10px radius · buttons 52/48
-  height · images 6px radius · hover transitions 200-300ms · minimal card shadows.
+- **Type scale:** hero 72/44 · H2 44/34 · H3 28/24 · card H4 22/20 · sub-headings 18/17 ·
+  body 16 · nav 18 (+4 per brand request) · nav CTA 18 · ribbon 17 · wordmark 18/16 ·
+  buttons 14 (w600) · labels 12/11 uppercase.
+- **Palette:** White primary bg · `#F5F5F7` grey bands & footer · ink `#1D1D1F` ·
+  grey text `#6E6E73` · Apple blue `#0071E3` actions/accents · `#2997FF`/`#64D2FF` on dark ·
+  borders `#D2D2D7` · true-black dark bands with blue/violet/cyan aurora · navy `#0A2540`
+  hero chart card · multi-colour capability accents · gradient headline keyword ·
+  Stripe-gradient contact CTA card.
+- **Logo:** blue premium gradient disc (#37A6FF → #0071E3 → #0053B3), white orbit/arrow/star.
+- **Layout:** 1440px max · 12-column desktop grid · 8px spacing · 120px sections (72 mobile) ·
+  header 84/68 · white cards + 1px border, 10px radius · buttons 52/48 · images 6px radius.
 
 ## Sections & features
 Hero with animated chart + parallax · **Growth-Engine infographic** (dark band right after
