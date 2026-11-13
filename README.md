@@ -10,7 +10,7 @@ growth & media consultancy. Apple-style premium design: SF Pro system stack, sap
 theonlinemarketing/
 ├── index.html                  ← home page (all sections)
 ├── CNAME                       ← custom domain: theonlinemarketing.in
-├── og-image.png                ← 1200×630 social share card
+├── og-image.png                ← 1200×630 share card (spec v2 palette+fonts)
 ├── css/
 │   └── style.css               ← shared stylesheet (home + article pages)
 ├── js/
@@ -18,6 +18,9 @@ theonlinemarketing/
 ├── assets/
 │   ├── anvesh.jpg              ← founder portrait (circular crop on site)
 │   ├── satya.jpg               ← founder portrait (circular crop on site)
+│   ├── fonts/space-grotesk-var.woff2  ← headings (variable)
+│   ├── fonts/dm-sans-var.woff2        ← body (variable)
+│   ├── fonts/dm-sans-var-italic.woff2
 │   └── README.txt
 ├── articles/
 │   ├── incrementality-at-scale.html
@@ -26,10 +29,27 @@ theonlinemarketing/
 └── README.md
 ```
 
-Pure static HTML/CSS/JS — no build step, no dependencies, no external requests.
+Pure static HTML/CSS/JS — no build step, no dependencies, no external requests
+(typeface is self-hosted, so even the fonts need no CDN).
+
+## Design system (client spec v2)
+- **Fonts (self-hosted, zero external requests):** Space Grotesk variable — headings;
+  DM Sans variable — body (`assets/fonts/`). SIL Open Font License.
+- **Type scale:** H1 hero 72/44 · H2 44/34 · H3 28/24 (w500) · card H4 22/20 (w600) ·
+  sub-headings 18/17 · body 16 · nav 14 (w500) · buttons 14 (w600) · labels 12/11 (w500,
+  uppercase, +1.2px) · footer 14/13. Line-heights & letter-spacing per spec (hero -2px, H2 -1.2px).
+- **Palette:** Warm Ivory `#F5F3EE` (primary bg) · Soft Beige `#EAE7E0` · Rich Black
+  `#171717` (text/buttons) · Stone Grey `#77766F` · Champagne Gold `#B5A58A` (accent, 3%) ·
+  White cards · borders `#DDDAD2` · Deep Charcoal `#222222` (dark bands + footer).
+- **Layout:** 1440px max content · 12-column desktop grid · 8px spacing system ·
+  120px section padding (72 mobile) · 80-100px side margins (20 mobile) · header 84/68 ·
+  hero min-height 700/600 · cards 32/24 padding, 28/16 gap, 10px radius · buttons 52/48
+  height · images 6px radius · hover transitions 200-300ms · minimal card shadows.
 
 ## Sections & features
-Hero with animated chart + parallax · brand marquee · capabilities grid · black manifesto band ·
+Hero with animated chart + parallax · **Growth-Engine infographic** (dark band right after
+the hero: gold rising curve that draws itself on scroll, 4 pulsing stage nodes
+DIAGNOSE→DESIGN→DEPLOY→COMPOUND, and 4 count-up proof stats) · brand marquee · capabilities grid · black manifesto band ·
 case studies with count-up metrics · About us with circular founder portraits · Articles
 (3 internal sub-pages + Anvesh's public playbooks) · approach · FAQ · contact (Calendly +
 Gmail compose + WhatsApp +91 81431 30661) · apple-style footer · scroll progress bar ·
